@@ -1,0 +1,56 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import './styles/animations.css';
+
+.eye-care-active, 
+.eye-care-active .bg-\[\#f8fafc\],
+.eye-care-active .bg-slate-50 {
+  background-color: #f4f1e6 !important; 
+  transition: background-color 0.6s ease;
+}
+
+.eye-care-active h1:not(.lg\:fixed h1), 
+.eye-care-active h2, 
+.eye-care-active h3,
+.eye-care-active .text-slate-900, 
+.eye-care-active .text-slate-800 {
+  color: #433422 !important; 
+}
+
+
+.eye-care-active .lg\:fixed h1 {
+  color: rgba(255, 255, 255, 0.95) !important;
+}
+
+
+.eye-care-active .lg\:fixed p,
+.eye-care-active .lg\:fixed .text-slate-200 {
+  color: rgba(226, 232, 240, 0.9) !important; 
+}
+
+.eye-care-active .lg\:fixed .text-slate-300 {
+  color: rgba(203, 213, 225, 0.8) !important;
+}
+
+
+.eye-care-active p:not(.lg\:fixed p), 
+.eye-care-active .text-slate-600, 
+.eye-care-active .text-slate-500 {
+  color: #5f5446 !important;
+}
+
+html {
+  scroll-behavior: smooth; 
+}
+
+
+.animate-fade-in {
+  animation: fadeIn 0.8s ease-out forwards;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
