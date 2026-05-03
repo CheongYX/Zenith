@@ -45,7 +45,7 @@ export default function LeftPanel({ lang }) {
 
         <div className="relative w-full flex-1">
           <div className={`absolute bottom-0 left-0 w-full flex flex-col gap-6 transition-all duration-700 ease-[cubic-bezier(0.16,1,0.3,1)] ${showToc && toc.length > 0 ? 'opacity-0 translate-y-12 pointer-events-none' : 'opacity-100 translate-y-0'}`}>
-            <h1 className="text-5xl lg:text-7xl font-black tracking-tighter">CYX</h1>
+            <h1 className="text-5xl lg:text-7xl font-black tracking-tighter">NAMED</h1>
             <div className="space-y-4">
               <p className="text-lg lg:text-xl text-slate-200 font-bold flex items-center gap-3 opacity-90">
                 <span className="w-10 h-[2px] bg-indigo-500"></span>{t.title}
